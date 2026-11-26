@@ -2,6 +2,7 @@
 
 import { useRef, useState, type FormEvent } from "react";
 import { cliente } from "@/config/cliente";
+import { openWhatsApp } from "@/lib/whatsapp/open";
 import { buildOrderMessage, buildWhatsAppUrl, type Pagamento } from "@/lib/whatsapp/order";
 import { toOrderFields, validateCheckout, type CheckoutErrors, type CheckoutInput } from "@/lib/whatsapp/validate";
 import { useCart } from "./CartProvider";
@@ -37,7 +38,7 @@ export function CheckoutForm() {
       cliente.nome,
       { taxaEntrega: cliente.taxaEntrega },
     );
-    window.open(buildWhatsAppUrl(cliente.whatsapp, text), "_blank", "noopener");
+    openWhatsApp(buildWhatsAppUrl(cliente.whatsapp, text));
   }
 
   const err = (k: keyof CheckoutInput) =>

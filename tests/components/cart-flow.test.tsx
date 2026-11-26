@@ -28,7 +28,7 @@ afterEach(() => { vi.restoreAllMocks(); localStorage.clear(); });
 
 describe("fluxo do pedido", () => {
   it("adiciona item, mostra contador e envia pedido de retirada pelo WhatsApp", async () => {
-    const open = vi.spyOn(window, "open").mockImplementation(() => null);
+    const open = vi.spyOn(window, "open").mockImplementation(() => ({}) as Window);
     const user = userEvent.setup();
     render(<App />);
 
@@ -52,7 +52,7 @@ describe("fluxo do pedido", () => {
   });
 
   it("mostra erro embaixo do campo quando falta o endereço na entrega", async () => {
-    const open = vi.spyOn(window, "open").mockImplementation(() => null);
+    const open = vi.spyOn(window, "open").mockImplementation(() => ({}) as Window);
     const user = userEvent.setup();
     render(<App />);
     await user.click(screen.getByRole("button", { name: "Adicionar Coca-Cola 350 ml" }));
