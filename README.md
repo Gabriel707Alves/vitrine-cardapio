@@ -28,7 +28,22 @@ npm run build
 | `NEXT_PUBLIC_DEMO_MODE` | `true` mostra a faixa de demonstração e bloqueia a indexação no Google |
 | `CARDAPIO_SHEET_URL` | CSV publicado da planilha do Google com o cardápio (opcional) |
 
+## Estrutura
+
+```
+src/
+├─ app/          layout, página, robots e sitemap
+├─ components/   layout/ (cabeçalho, rodapé), sections/ (hero, visita, buffet), menu/, cart/
+├─ lib/          lógica testada: cart, whatsapp, menu (planilha), hours, format
+├─ config/       cliente.ts: tudo o que muda de um cliente para outro
+└─ data/         cardapio.json (cardápio de reserva)
+tests/           espelha src/lib e os componentes
+docs/            design, plano, planilha.md, novo-cliente.md
+```
+
 ## Documentação
 
+- Novo cliente: `docs/novo-cliente.md`
+- Cardápio pela planilha do Google: `docs/planilha.md`
 - Design: `docs/superpowers/specs/`
 - Plano de implementação: `docs/superpowers/plans/`
