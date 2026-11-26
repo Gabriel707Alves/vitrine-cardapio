@@ -1,0 +1,29 @@
+{
+  "categorias": [
+    {
+      "nome": "Pratos do dia",
+      "itens": [
+        { "id": "pratos-do-dia-frango-assado-com-batatas", "categoria": "Pratos do dia", "nome": "Frango assado com batatas", "descricao": "Acompanha arroz, feijão e salada da casa.", "preco": 2400, "disponivel": true },
+        { "id": "pratos-do-dia-carne-de-panela", "categoria": "Pratos do dia", "nome": "Carne de panela", "descricao": "Acompanha arroz, feijão e purê de mandioca.", "preco": 2600, "disponivel": true },
+        { "id": "pratos-do-dia-file-de-tilapia-grelhado", "categoria": "Pratos do dia", "nome": "Filé de tilápia grelhado", "descricao": "Acompanha arroz, legumes no vapor e salada.", "preco": 2700, "disponivel": true },
+        { "id": "pratos-do-dia-omelete-de-legumes", "categoria": "Pratos do dia", "nome": "Omelete de legumes", "descricao": "Acompanha arroz integral e salada verde.", "preco": 2100, "disponivel": true }
+      ]
+    },
+    {
+      "nome": "Adicionais",
+      "itens": [
+        { "id": "adicionais-batata-frita", "categoria": "Adicionais", "nome": "Batata frita", "descricao": "Porção para uma pessoa.", "preco": 1000, "disponivel": true },
+        { "id": "adicionais-farofa-da-casa", "categoria": "Adicionais", "nome": "Farofa da casa", "preco": 600, "disponivel": true },
+        { "id": "adicionais-ovo-frito", "categoria": "Adicionais", "nome": "Ovo frito", "preco": 400, "disponivel": true }
+      ]
+    },
+    {
+      "nome": "Bebidas",
+      "itens": [
+        { "id": "bebidas-suco-de-laranja-300-ml", "categoria": "Bebidas", "nome": "Suco de laranja 300 ml", "preco": 900, "disponivel": true },
+        { "id": "bebidas-refrigerante-lata-350-ml", "categoria": "Bebidas", "nome": "Refrigerante lata 350 ml", "preco": 700, "disponivel": true },
+        { "id": "bebidas-agua-sem-gas-500-ml", "categoria": "Bebidas", "nome": "Água sem gás 500 ml", "preco": 500, "disponivel": true }
+      ]
+    }
+  ]
+}
