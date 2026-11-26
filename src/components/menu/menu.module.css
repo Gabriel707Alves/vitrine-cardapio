@@ -10,7 +10,7 @@
 .groups { margin-top: var(--s-8); }
 @media (max-width: 639px) { .groups { margin-top: var(--s-6); row-gap: var(--s-8); } }
 .label { margin: 0 0 var(--s-3); }
-[id^="cat-"] { scroll-margin-top: calc(var(--nav) + var(--s-5)); }
+.group { scroll-margin-top: calc(var(--nav) + var(--s-5)); }
 .list { list-style: none; margin: 0; padding: 0; }
 
 .item {

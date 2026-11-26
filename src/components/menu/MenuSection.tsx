@@ -55,7 +55,7 @@ export function MenuSection({ menu }: { menu: Menu }) {
 function Group({ nome, itens, className }: { nome: string; itens: Menu["categorias"][number]["itens"]; className?: string }) {
   const id = `cat-${slugify(nome)}`;
   return (
-    <div className={className} id={id}>
+    <div className={[s.group, className].filter(Boolean).join(" ")} id={id}>
       <p className={`t-label ${s.label}`}>{nome}</p>
       <ul className={s.list} aria-label={nome}>
         {itens.map((item) => (
