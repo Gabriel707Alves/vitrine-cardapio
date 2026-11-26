@@ -39,3 +39,8 @@ html[data-demo] .nav__bar { height: auto; flex: 1; }
 /* ---------- botão do carrinho no cabeçalho ---------- */
 .cart-button { gap: var(--s-2); padding-inline: var(--s-4); }
 .cart-button__count { font-variant-numeric: tabular-nums; min-width: 1ch; }
+/* Entre 640 e 1023 o kit esconde tudo na barra menos o botão principal, e a barra de ações
+   só existe abaixo de 640: sem isto o carrinho fica inacessível no tablet. */
+@media (min-width: 640px) and (max-width: 1023px) {
+  .nav:not(.is-open) .nav__actions > .btn.cart-button { display: inline-flex; }
+}
