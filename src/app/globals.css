@@ -1,0 +1,34 @@
+/* Estilos da página além do kit (public/assets/system.css). Só o que o kit manda escrever como CSS da página. */
+
+/* ---------- modo demonstração: faixa fixa acima do cabeçalho ---------- */
+html[data-demo] { --demo: 36px; --nav: calc(72px + var(--demo)); }
+@media (max-width: 639px) { html[data-demo] { --demo: 48px; --nav: calc(56px + var(--demo)); } }
+html[data-demo] .nav { display: flex; flex-direction: column; }
+html[data-demo] .nav__bar { height: auto; flex: 1; }
+.demo-banner {
+  height: var(--demo); display: flex; align-items: center; justify-content: center;
+  background: var(--p-inv-bg); color: var(--p-inv-ink); padding: 0 var(--s-5);
+  font-size: var(--t-small); line-height: 1.3; text-align: center;
+}
+.demo-banner p { margin: 0; }
+.demo-banner .link { color: inherit; }
+
+/* ---------- logo com imagem ---------- */
+.nav__logo-img { width: 36px; height: 36px; object-fit: contain; flex: none; }
+
+/* ---------- momento de tipo: o endereço grande na visita ---------- */
+.type-moment { font: var(--display-weight) clamp(48px, 7vw, 104px) / 1.02 var(--font-display); letter-spacing: -0.03em; margin: 0; }
+.type-moment a { color: inherit; text-decoration: none; }
+
+/* ---------- visita ---------- */
+.visit { background: var(--g-alt); padding: var(--s-7); }
+@media (max-width: 639px) { .visit { padding: var(--s-5); } }
+.visit__address { font-size: 20px; line-height: 30px; font-style: normal; }
+@media (max-width: 639px) { .visit__address { font-size: 18px; line-height: 28px; } }
+
+/* ---------- rodapé ---------- */
+.footer__list { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--s-3); }
+.close-band { padding: var(--padt) 0 var(--padb); }
+
+/* ---------- selo "a confirmar" ---------- */
+.badge-assumed { font-size: var(--t-label); font-weight: 500; color: var(--muted); }
