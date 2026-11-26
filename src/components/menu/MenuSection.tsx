@@ -1,3 +1,4 @@
+import { Photo } from "@/components/sections/Photo";
 import { cliente } from "@/config/cliente";
 import { slugify } from "@/lib/menu/csv";
 import type { Menu } from "@/lib/menu/types";
@@ -33,6 +34,13 @@ export function MenuSection({ menu }: { menu: Menu }) {
           <div className={`grid grid--top ${s.groups}`}>
             <Group nome={primeira.nome} itens={primeira.itens} className="span-6" />
             <div className="span-6 start-7 stack-8">
+              <div className={s.pair}>
+                {cliente.fotos.cardapio.map((f) => (
+                  <figure key={f.src} className={s.pairPhoto}>
+                    <Photo foto={f} sizes="(max-width: 639px) 50vw, 300px" width={600} height={750} />
+                  </figure>
+                ))}
+              </div>
               {resto.map((c) => (
                 <Group key={c.nome} nome={c.nome} itens={c.itens} />
               ))}
@@ -48,7 +56,7 @@ function Group({ nome, itens, className }: { nome: string; itens: Menu["categori
   const id = `cat-${slugify(nome)}`;
   return (
     <div className={className} id={id}>
-      <h3 className={`t-label ${s.label}`}>{nome}</h3>
+      <p className={`t-label ${s.label}`}>{nome}</p>
       <ul className={s.list} aria-label={nome}>
         {itens.map((item) => (
           <ProductCard key={item.id} item={item} />

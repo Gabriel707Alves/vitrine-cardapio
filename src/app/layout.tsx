@@ -47,10 +47,13 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       suppressHydrationWarning
     >
       <head>
+        {/* Kit da taste-skill servido como arquivo estático (não passa pelo bundler de CSS). */}
+        {/* eslint-disable @next/next/no-css-tags */}
         <link rel="stylesheet" href="/assets/system.css" />
         <link rel="stylesheet" href="/assets/ui/cards.css" />
         <link rel="stylesheet" href="/assets/motion/motion.css" />
         <link rel="stylesheet" href="/assets/layout/layout.css" />
+        {/* eslint-enable @next/next/no-css-tags */}
         <style dangerouslySetInnerHTML={{ __html: tokens }} />
         <script
           dangerouslySetInnerHTML={{

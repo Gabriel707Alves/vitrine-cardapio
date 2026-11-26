@@ -46,8 +46,8 @@ export const cliente: Cliente = {
     heroLead: "Marmita do dia a partir de R$ 21, pedida pelo WhatsApp e pronta em 30 minutos.",
     cardapioTitulo: "Marmitas de hoje",
     cardapioLinha: "Monte o pedido e envie pelo WhatsApp.",
-    visitaTitulo: "Onde estamos",
-    buffetTitulo: "O buffet do almoço",
+    visitaTitulo: "Endereço e horário",
+    buffetTitulo: "Buffet por quilo",
     buffetLinha: "Pago por quilo, servido das 11h às 15h.",
     declaracao: {
       rotulo: "A cozinha",

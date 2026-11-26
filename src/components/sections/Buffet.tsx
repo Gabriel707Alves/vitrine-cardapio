@@ -11,17 +11,19 @@ export function Buffet() {
         <div className="section-head--split">
           <div>
             <h2 id="buffet-h">{textos.buffetTitulo}</h2>
-            <p>{textos.buffetLinha}</p>
-          </div>
-          {precoKg && (
-            <p className="t-lead">
-              Quilo {formatBRL(precoKg.valor)}
-              {precoKg.aConfirmar && <span className="badge-assumed"> · valor a confirmar</span>}
+            <p>
+              {textos.buffetLinha}
+              {precoKg && (
+                <>
+                  {" "}Quilo {formatBRL(precoKg.valor)}
+                  {precoKg.aConfirmar && <span className="badge-assumed"> (valor a confirmar)</span>}.
+                </>
+              )}
             </p>
-          )}
+          </div>
         </div>
         <figure className="bleed-photo fill">
-          <Photo foto={fotos.buffet} sizes="100vw" width={2000} height={780} />
+          <Photo foto={fotos.buffet} sizes="(max-width: 639px) 260vw, 100vw" width={2000} height={780} />
         </figure>
       </div>
     </section>

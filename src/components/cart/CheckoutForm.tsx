@@ -76,7 +76,7 @@ export function CheckoutForm() {
             id="ck-endereco"
             name="endereco"
             autoComplete="street-address"
-            placeholder="Rua, número e complemento"
+            placeholder="Rua, número e complemento…"
             value={input.endereco}
             onChange={(e) => set("endereco", e.target.value)}
             {...aria("endereco")}
@@ -100,14 +100,14 @@ export function CheckoutForm() {
       {input.pagamento === "dinheiro" && (
         <div className={s.field}>
           <label htmlFor="ck-troco">Troco para quanto? (opcional)</label>
-          <input id="ck-troco" name="troco" inputMode="decimal" placeholder="Ex.: 100" value={input.troco} onChange={(e) => set("troco", e.target.value)} {...aria("troco")} />
+          <input id="ck-troco" name="troco" inputMode="decimal" autoComplete="off" placeholder="Ex.: 100" value={input.troco} onChange={(e) => set("troco", e.target.value)} {...aria("troco")} />
           {err("troco")}
         </div>
       )}
 
       <div className={s.field}>
         <label htmlFor="ck-obs">Observação (opcional)</label>
-        <textarea id="ck-obs" name="observacao" rows={2} value={input.observacao} onChange={(e) => set("observacao", e.target.value)} />
+        <textarea id="ck-obs" name="observacao" rows={2} autoComplete="off" value={input.observacao} onChange={(e) => set("observacao", e.target.value)} />
       </div>
 
       <button type="submit" className="btn btn--primary">

@@ -8,8 +8,7 @@ export function Footer() {
   const { endereco, textos, fotos } = cliente;
   return (
     <footer className="footer closing footer--columns" id="contato" aria-labelledby="close-h">
-      <div className="ground-brand close-band">
-        <div className="wrap">
+      <div className="wrap">
           <div className="closing__cta close--photo">
             <div className="section-head--split">
               <div>
@@ -28,9 +27,6 @@ export function Footer() {
               <img src={fotos.fechamento.src} alt={fotos.fechamento.alt} loading="lazy" style={{ objectPosition: fotos.fechamento.pos }} />
             </div>
           </div>
-        </div>
-      </div>
-      <div className="wrap">
         <div className="closing__links">
           <div className="grid">
             <div className="span-4 stack-4">
