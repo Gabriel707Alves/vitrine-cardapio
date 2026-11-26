@@ -1,0 +1,163 @@
+{
+  "categorias": [
+    {
+      "nome": "Pratos do dia",
+      "itens": [
+        {
+          "id": "pratos-do-dia-frango-assado-com-batatas",
+          "categoria": "Pratos do dia",
+          "nome": "Frango assado com batatas",
+          "descricao": "Acompanha arroz, feijão e salada da casa.",
+          "preco": 2400,
+          "disponivel": true
+        },
+        {
+          "id": "pratos-do-dia-carne-de-panela",
+          "categoria": "Pratos do dia",
+          "nome": "Carne de panela",
+          "descricao": "Acompanha arroz, feijão e purê de mandioca.",
+          "preco": 2600,
+          "disponivel": true
+        },
+        {
+          "id": "pratos-do-dia-file-de-tilapia-grelhado",
+          "categoria": "Pratos do dia",
+          "nome": "Filé de tilápia grelhado",
+          "descricao": "Acompanha arroz, legumes no vapor e salada.",
+          "preco": 2700,
+          "disponivel": true
+        },
+        {
+          "id": "pratos-do-dia-omelete-de-legumes",
+          "categoria": "Pratos do dia",
+          "nome": "Omelete de legumes",
+          "descricao": "Acompanha arroz integral e salada verde.",
+          "preco": 2100,
+          "disponivel": true
+        },
+        {
+          "id": "pratos-do-dia-bife-acebolado",
+          "categoria": "Pratos do dia",
+          "nome": "Bife acebolado",
+          "preco": 2500,
+          "disponivel": true,
+          "descricao": "Acompanha arroz, feijão, farofa e salada."
+        },
+        {
+          "id": "pratos-do-dia-strogonoff-de-frango",
+          "categoria": "Pratos do dia",
+          "nome": "Strogonoff de frango",
+          "preco": 2400,
+          "disponivel": true,
+          "descricao": "Acompanha arroz branco e batata palha."
+        },
+        {
+          "id": "pratos-do-dia-feijoada-da-casa",
+          "categoria": "Pratos do dia",
+          "nome": "Feijoada da casa",
+          "preco": 2800,
+          "disponivel": true,
+          "descricao": "Às quartas e sábados. Acompanha couve, farofa e laranja."
+        },
+        {
+          "id": "pratos-do-dia-lasanha-a-bolonhesa",
+          "categoria": "Pratos do dia",
+          "nome": "Lasanha à bolonhesa",
+          "preco": 2600,
+          "disponivel": true,
+          "descricao": "Acompanha salada verde."
+        }
+      ]
+    },
+    {
+      "nome": "Adicionais",
+      "itens": [
+        {
+          "id": "adicionais-batata-frita",
+          "categoria": "Adicionais",
+          "nome": "Batata frita",
+          "descricao": "Porção para uma pessoa.",
+          "preco": 1000,
+          "disponivel": true
+        },
+        {
+          "id": "adicionais-farofa-da-casa",
+          "categoria": "Adicionais",
+          "nome": "Farofa da casa",
+          "preco": 600,
+          "disponivel": true
+        },
+        {
+          "id": "adicionais-ovo-frito",
+          "categoria": "Adicionais",
+          "nome": "Ovo frito",
+          "preco": 400,
+          "disponivel": true
+        },
+        {
+          "id": "adicionais-salada-da-casa",
+          "categoria": "Adicionais",
+          "nome": "Salada da casa",
+          "preco": 800,
+          "disponivel": true,
+          "descricao": "Mix de folhas e legumes do dia."
+        },
+        {
+          "id": "adicionais-banana-a-milanesa",
+          "categoria": "Adicionais",
+          "nome": "Banana à milanesa",
+          "preco": 500,
+          "disponivel": true,
+          "descricao": "Uma unidade."
+        }
+      ]
+    },
+    {
+      "nome": "Bebidas",
+      "itens": [
+        {
+          "id": "bebidas-suco-de-laranja-300-ml",
+          "categoria": "Bebidas",
+          "nome": "Suco de laranja 300 ml",
+          "preco": 900,
+          "disponivel": true
+        },
+        {
+          "id": "bebidas-refrigerante-lata-350-ml",
+          "categoria": "Bebidas",
+          "nome": "Refrigerante lata 350 ml",
+          "preco": 700,
+          "disponivel": true
+        },
+        {
+          "id": "bebidas-agua-sem-gas-500-ml",
+          "categoria": "Bebidas",
+          "nome": "Água sem gás 500 ml",
+          "preco": 500,
+          "disponivel": true
+        },
+        {
+          "id": "bebidas-suco-de-limao-300-ml",
+          "categoria": "Bebidas",
+          "nome": "Suco de limão 300 ml",
+          "preco": 900,
+          "disponivel": true
+        },
+        {
+          "id": "bebidas-agua-com-gas-500-ml",
+          "categoria": "Bebidas",
+          "nome": "Água com gás 500 ml",
+          "preco": 600,
+          "disponivel": true
+        },
+        {
+          "id": "bebidas-guarana-lata-350-ml",
+          "categoria": "Bebidas",
+          "nome": "Guaraná lata 350 ml",
+          "preco": 700,
+          "disponivel": true
+        }
+      ]
+    }
+  ]
+}
